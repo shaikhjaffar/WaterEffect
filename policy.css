@@ -1,0 +1,84 @@
+
+
+*{
+    color: aliceblue;
+}
+ body{
+    background-image: url(./liquid.jpg);
+    background-size: cover;
+    overflow-x: hidden;
+ }
+ .particles-js-canvas-el{
+    position: fixed;
+  }
+.card-of-policy{
+    position: relative;
+    box-sizing: border-box;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 10px;
+    border: 1px solid #FFE489;
+    z-index: 1;
+    margin-top: 2%;
+    padding-bottom: 7%;
+    }
+    .Bold-text-heading{
+        margin-top: 2%;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 21px;
+        margin-left: 4%;
+    }
+    .content-text-of-policy{
+        width: 92%;
+        display: flex;
+        margin-left: 4%;
+        line-height: 1.5rem;
+    }
+    .content-ka-card-of-policy{
+        margin-top:3%;
+    }
+    .text-heading-of-policy{
+        display: flex;
+        justify-content: center;
+        margin-top:7%;
+        position: relative;
+  font-family: 'Futura Md BT','sans-serif';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 3.5vw;
+  background-image: -webkit-linear-gradient(160deg, #4b4b4b 30.92%, #FFFFFF 48.36%, #4b4b4b 68.09%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-repeat: initial;
+  background-size: 80%;
+  animation: animate 6s linear infinite;
+  -webkit-text-fill-color: rgba(255, 255, 255, .1);
+  z-index: -1;
+    }
+    @keyframes animate
+ {
+  0%
+  {
+    background-position: -500%;
+  }
+  100%
+  {
+    background-position: 500%;
+  }
+ }
+ @media screen and (max-width:500px) {
+    .Bold-text-heading{
+        margin-top: 2%;
+        font-size: 9px;
+        margin-left: 4%;
+    }
+    .content-text-of-policy{
+        line-height: 1rem;
+        font-size: 7.5px;
+    }
+ }
+
+  
+ 

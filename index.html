@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#000000" />
+    <link  rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>SKY Dreamers Club</title>
+</head>
+<body>
+
+    <div id="overlay">
+        <div id="progstat"></div>
+        <div id="progress"></div>
+        <span class="prg"></span>
+        <img src="./images/bird.png"/>
+        <!-- <svg id="bird" width="200" height="200" viewBox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
+            <path d="M29.3695 9.82656C29.2519 9.77606 29.1371 9.7261 29.0252 9.67739C28.8574 9.60434 28.696 9.53411 28.5413 9.4691C28.1038 9.28527 27.703 9.13574 27.2944 9.04722L27.2942 9.04719C26.6109 8.89874 26.109 9.3558 25.6724 10.0522L25.6722 10.0524C25.4142 10.463 25.2064 10.7886 25.0229 11.0133C24.8461 11.2297 24.6435 11.4153 24.3814 11.4356C24.1186 11.4559 23.8912 11.3027 23.6859 11.1164C23.473 10.923 23.222 10.6342 22.9101 10.2712L22.91 10.2712C20.5795 7.55656 17.707 5.47464 14.8029 3.38623C13.7886 2.65682 12.7557 1.95412 11.7032 1.27915C11.7306 1.30753 11.7579 1.33592 11.7853 1.3643C12.9138 2.53575 14.0479 3.71292 15.1107 4.94755L15.1107 4.94757C16.406 6.45259 17.6318 8.03818 18.7279 9.69896L18.728 9.69908C20.169 11.8853 20.2107 14.2392 18.9929 16.5609L18.9928 16.561C17.6208 19.1751 15.4824 21.0761 13.2417 22.8149C10.7773 24.7279 8.15592 26.3804 5.46094 27.9027C6.40758 27.4227 7.35584 26.9473 8.30357 26.4722C11.2185 25.0108 14.1286 23.5518 16.9718 21.9704C18.6959 21.011 20.2973 19.8279 21.9092 18.637C22.2723 18.3687 22.6359 18.1001 23.0016 17.8335C24.9868 16.3863 26.4531 14.5219 27.3509 12.1927L27.351 12.1925C27.685 11.3287 27.9392 10.7946 28.331 10.4221C28.6053 10.1615 28.9361 9.99066 29.3695 9.82656Z" stroke="#FFE489" stroke-width="0.5"/>
+            </svg> -->
+            
+      </div>
+       
+ 
+    <!-- <div class="star">
+        <span></span>
+        <span></span>
+        <span></span> -->
+        <!-- <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span> -->
+        <!-- </div> -->
+    <div class="front_page" id="page">
+        <div class="main_heading">
+        </div>
+
+    </div>
+    <div id="particles-js">
+        
+    </div>
+    <section> 
+        <div class="top-button" onclick="navigate('contact')" >
+            <img  src="./images/TopButton.png" alt="buton"/>
+         </div>
+            <img class="logo" src="./images/updatedLogo.png" alt="logo"/>
+            <div class="scroll" id="scr" onclick="navigate('service')"></div>
+    </section>
+
+    <div class="service-section" id="service">
+        <div class="service-head">
+            <p class="ser">Our</p>
+            <p>Services</p>
+            <img src="./Vector 235.png"/>
+        </div>
+     
+     <span>Performance Marketing</span>
+     <span>3D/4D Artistry</span>
+     <span>Search Engine Optimisation (SEO)</span>
+     <span>Content Writing</span>
+     <span>Social Media Management</span>
+     <span>Influencer Marketing</span>
+     <span>Marketing Automation</span>
+     <span>Content Creation</span>
+     <span>Branding</span>
+     <span>App Development</span>
+     <span>Web Design & Development (Ui/Ux)</span>
+    </div>
+
+  <img class="miidle_img" src="./images/Group 360366.png"/>
+<div class="contact" id="contact">
+   <div class="head">
+   <h1>Contact Us</h1>
+   </div>
+   <form class="main">
+   <input type="text"  placeholder="NAME">
+   <input type="text" placeholder="WEBSITE URL">
+   <input type="text"  id="text-number" onkeyup="ValidateNumber(event)" maxlength="13" minlength="10" placeholder="PHONE" required />
+   <input type="text"  placeholder="BUSINESS OPERATING SINCE"/>
+   <input type="email" placeholder="EMAIL"/>
+   <input type="text" placeholder="BUSINESS GOALS"/>
+   <input type="text" placeholder="BRAND NAME" />
+   <input type="text"  placeholder="HOW DID YOU HEAR ABOUT US ?" />
+   <input type="text" placeholder="MONTHLY ADVERTISING BUDGET" />
+   <input type="text"   placeholder="ANYTHING ELSE WE SHOULD KNOW ?" />
+   </form>
+   <div class="parent-box">
+    <div class="box"></div>
+   <span class="line3"></span>
+   </div>
+</div>
+
+
+<div class="footer">
+    
+    <span class="btn-top">
+        <button type="submit" onclick="sendData()">SUBMIT</button>
+     </span>
+    <h1 style="font-weight: bolder;">Our Clients</h1>
+    <div class="marquee">
+             <div class="marquee_content">
+            <img src="./images/hello-policy-logo.svg" alt="Logo2"/>
+          <img src="./images/Apollo-Tyre-Logo-PNG-HD-New 1.png" alt="Logo3"/>
+          <img src="./images/Asset 12@3x.png" alt="Logo1"/>
+          <img src="./images/qzwxecrvtbynumasdafghjvkesfrdfgh-01.png" alt="Logo6"/>
+          <img src="./images/Big_Logo.svg" alt="Logo4"/>
+          <img src="./images/dubai.png" alt="Logo5"/>
+        </div>
+      </div>
+     <span class="line"></span>
+    <div class="blog-banner">
+        <h2>Sky Dreamers Club, Bombay, INDIA</h2>
+        <span class="btn-top2">
+            <button>BLOG</button>
+         </span>
+    </div>
+    <span class="line1"></span>
+    <p>"Not the Final Website"</p>
+    <span class="line1"></span>
+    <span class="line2"></span>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+<script  src="./jquery.ripples-min.js"></script>
+<script src="particles.js"></script>
+<script src="app.js"></script>
+<script  src="./jquery.ripples.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
+
